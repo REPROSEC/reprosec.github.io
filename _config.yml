@@ -34,10 +34,19 @@ plugins:
   #- jekyll-feed
 
 scholar:
-  style: acm-sig-proceedings
-  sort_by: year
+  style: _bibliography/mystyle.csl #springer-lecture-notes-in-computer-science #acm-sig-proceedings
+  sort_by: year, month
   bibliography_template: bibtemplate
   repository: publications
+  relative: /publications/
+  replace_strings: true
+  bibliography_list_tag: div
+  bibliography_item_tag: div
+  #bibliography_list_attributes:
+  #  style: "color: red;"
+  #bibliography_item_attrubutes:
+  #  style: "color: red;"
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.

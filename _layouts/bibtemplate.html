@@ -1,17 +1,17 @@
 ---
 ---
 <div class="text-justify">{{reference}}</div>
-{% if entry.abstract %}
-<button class="button0"  onclick="toggleAbstract{{entry.key}}()">Abstract</button>
-{% endif %}
 {% if links.pdf %}
 <a href="{{links.pdf}}">PDF</a>
 {% endif %}
-<button class="button0"  onclick="toggleBibtex{{entry.key}}()">Bibtex</button>
+{% if entry.abstract %}
+<a onclick="toggleAbstract{{entry.key}}()" href="#">Abstract</a>
+{% endif %}
+<a onclick="toggleBibtex{{entry.key}}()" href="#">BibTeX</a>
  
-    <div id="abstract{{entry.key}}" style="display: none;">
-	{{entry.abstract | markdownify}}
-    </div>
+<div id="abstract{{entry.key}}" style="border-left: 4px solid #a0a0a0; padding-left:1ex; display: none;">
+    {{entry.abstract | markdownify}}
+</div>
 <div id="bibtex{{entry.key}}" style="display: none;">
 <pre>{{entry.bibtex}}</pre>
 </div>

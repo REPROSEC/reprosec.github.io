@@ -16,7 +16,7 @@ REPROSEC stands for "Rigorous/Reproducible Engineering for PROvable (protocol) S
 
  * [Karthikeyan Bhargavan (Prosecco, INRIA Paris)](https://prosecco.gforge.inria.fr/personal/karthik/)
  * [Abhishek Bichhawat (IIT Gandhinagar)](https://iitgn.ac.in/faculty/cse/abhishek)
- * Quoc Huy Do (GLIWA Gmbh)
+ * Quoc Huy Do (GLIWA Gmbh; previously SEC, University of Stuttgart)
  * [Pedram Hosseyni (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Ralf Küsters (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Guido Schmitz (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
