@@ -30,7 +30,14 @@ github_username: reprosec
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-scholar
+  #- jekyll-feed
+
+scholar:
+  style: acm-sig-proceedings
+  sort_by: year
+  bibliography_template: bibtemplate
+  repository: publications
 
 # Exclude from processing.
 # The following items will not be processed, by default.

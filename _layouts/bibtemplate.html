@@ -1,0 +1,35 @@
+---
+---
+<div class="text-justify">{{reference}}</div>
+{% if entry.abstract %}
+<button class="button0"  onclick="toggleAbstract{{entry.key}}()">Abstract</button>
+{% endif %}
+{% if links.pdf %}
+<a href="{{links.pdf}}">PDF</a>
+{% endif %}
+<button class="button0"  onclick="toggleBibtex{{entry.key}}()">Bibtex</button>
+ 
+    <div id="abstract{{entry.key}}" style="display: none;">
+	{{entry.abstract | markdownify}}
+    </div>
+<div id="bibtex{{entry.key}}" style="display: none;">
+<pre>{{entry.bibtex}}</pre>
+</div>
+<script>
+function toggleBibtex{{entry.key}}(parameter) {
+    var x= document.getElementById('bibtex{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+ }
+function toggleAbstract{{entry.key}}(parameter) {
+     var x= document.getElementById('abstract{{entry.key}}');
+     if (x.style.display === 'none') {
+         x.style.display = 'block';
+     } else {
+         x.style.display = 'none';
+     }
+ }
+</script>
