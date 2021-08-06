@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: reprosec
+encoding: utf-8
 
 # Build settings
 theme: minima
@@ -33,19 +34,27 @@ plugins:
   - jekyll-scholar
   #- jekyll-feed
 
+header_pages:
+  - index.md
+  - case-studies.md
+  - publications.md
+  
 scholar:
   style: _bibliography/mystyle.csl #springer-lecture-notes-in-computer-science #acm-sig-proceedings
   sort_by: year, month
-  bibliography_template: bibtemplate
+  #bibliography_template: bibtemplate
   repository: publications
-  relative: /publications/
+  #relative: /publications/
   replace_strings: true
-  bibliography_list_tag: div
-  bibliography_item_tag: div
-  #bibliography_list_attributes:
-  #  style: "color: red;"
-  #bibliography_item_attrubutes:
-  #  style: "color: red;"
+  bibliography_list_tag: ul
+  bibliography_item_tag: li
+  bibliography_list_attributes:
+    class: "bibliography-list"
+  bibliography_item_attributes:
+    class: "bibliography-entry"
+  details_link: " Details "
+  details_dir: bibliography
+  details_layout: bibliography-detail.html
   
 
 # Exclude from processing.
