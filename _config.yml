@@ -32,10 +32,12 @@ encoding: utf-8
 theme: minima
 plugins:
   - jekyll-scholar
+  - jekyll-toc
   #- jekyll-feed
 
 header_pages:
   - index.md
+  - dystar.md
   - case-studies.md
   - publications.md
   

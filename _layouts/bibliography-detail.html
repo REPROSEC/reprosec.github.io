@@ -21,6 +21,12 @@ layout: default
       {{ page.entry.abstract | markdownify }}
   </div>
 
+  <div>{% reference page.entry.key %}</div>
+
+  {% if page.entry.url %}
+  <a href="{{page.entry.url}}">Link</a>
+  {% endif %}
+
   {% if page.links.pdf %}
 <a href="{{page.links.pdf}}">PDF</a>
 {% endif %}
