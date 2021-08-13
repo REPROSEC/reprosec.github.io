@@ -4,6 +4,6 @@ title: Publications
 permalink: /publications/
 ---
 
-Here you find our publications.
+Here, you find all of the publications of the REPROSEC project.
 
 {% bibliography --query @*[ourwork=yes] %}

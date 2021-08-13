@@ -42,13 +42,44 @@ pages = {147--166},
 
 
 @article{guttmanfest2021,
-  ourwork = {yes},
-  author      = {Karthikeyan Bhargavan and Abhishek Bichhawat and Quoc Huy Do and Pedram Hosseyni and Ralf Küsters and Guido Schmitz and Tim Würtele},
-  title	      = {A Tutorial-Style Introduction to DY*},
-  booktitle   = {Guttmanfest 2021},
-  year	      = 2021,
-  publisher   = {Springer},
-  note	      = {To appear.},
+  ourwork =	 {yes},
+  author =	 {Karthikeyan Bhargavan and Abhishek Bichhawat and
+                  Quoc Huy Do and Pedram Hosseyni and Ralf Küsters and
+                  Guido Schmitz and Tim Würtele},
+  title =	 {A Tutorial-Style Introduction to DY*},
+  booktitle =	 {Guttmanfest 2021},
+  year =	 2021,
+  publisher =	 {Springer},
+  note =	 {To appear.},
+  abstract =	 {DY* is a recently proposed formal verification
+                  framework for the symbolic security analysis of
+                  cryptographic protocol code written in the F*
+                  programming language.  Unlike automated symbolic
+                  provers, D* accounts for advanced protocol features
+                  like unbounded loops and mutable recursive data
+                  structures as well as low-level implementation
+                  details like protocol state machines and message
+                  formats, which are often at the root of real-world
+                  attacks. Protocols modeled in DY* can be executed,
+                  and hence, tested, and they can even interoperate
+                  with real-world counterparts.  DY* extends a long
+                  line of research on using dependent type systems but
+                  takes a fundamentally new approach by explicitly
+                  modeling the global trace-based semantics within the
+                  framework, hence bridging the gap between
+                  trace-based and type-based protocol analyses. With
+                  this, one can uniformly, precisely, and soundly
+                  model, for the first time using dependent types,
+                  long-lived mutable protocol state, equational
+                  theories, fine-grained dynamic corruption, and
+                  trace-based security properties like forward secrecy
+                  and post-compromise security.
+
+                  In this paper, we
+                  provide a tutorial-style introduction to DY*: We
+                  illustrate how to model and prove the security of
+                  the ISO-DH protocol, a simple key exchange protocol
+                  based on Diffie-Hellman.  },
 }
 
 @incollection{rfc8555,
@@ -83,6 +114,7 @@ pages = {147--166},
   year	      = 2021,
   publisher   = {ACM},
   note	      = {To appear.},
+  abstract = {},
 }
 
 
