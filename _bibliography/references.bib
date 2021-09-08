@@ -120,12 +120,12 @@ pages = {147--166},
 
 @article{dystareurosp2021,
   ourwork     = {yes},
-  author = {Karthikeyan Bhargavan and Abhishek Bichhawat and Quoc Huy Do and Pedram Hosseyni and Ralf Küsters and Guido Schmitz and Tim Würtele},
-  title = {DY*: Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code},
-  booktitle = {6th IEEE European Symposium on Security and Privacy (EuroS\&P 2021)},
+    author = {Karthikeyan Bhargavan and Abhishek Bichhawat and Quoc Huy Do and Pedram Hosseyni and Ralf Küsters and Guido Schmitz and Tim Würtele},
+  title = {{DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code}},
+  booktitle = {{2021 IEEE European Symposium on Security and Privacy (EuroS{\&}P)}},
   year = 2021,
   publisher   = {IEEE Computer Society},
-  note = {To appear.},
+  pages = {523--542},
   abstract = {We present DY\*, a new formal verification framework for the symbolic security analysis of cryptographic protocol code written in the F* programming language. Unlike automated symbolic provers, our framework accounts for advanced protocol features like unbounded loops and mutable recursive data structures, as well as low-level implementation details like protocol state machines and message formats, which are often at the root of real-world attacks.
 
 Our work extends a long line of research on using dependent type systems for this task, but takes a fundamentally new approach by explicitly modeling the global trace-based semantics within the framework, hence bridging the gap between trace-based and type-based protocol analyses. This approach enables us to uniformly, precisely, and soundly model, for the first time using dependent types, long-lived mutable protocol state, equational theories, fine-grained dynamic corruption, and trace-based security properties like forward secrecy and post-compromise security.
