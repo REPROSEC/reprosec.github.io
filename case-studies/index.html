@@ -30,7 +30,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">About</a><a class="page-link" href="/case-studies/">Case Studies</a><a class="page-link" href="/publications/">Publications</a></div>
+        <div class="trigger"><a class="page-link" href="/">About</a><a class="page-link" href="/dystar/">DY*</a><a class="page-link" href="/case-studies/">Case Studies</a><a class="page-link" href="/publications/">Publications</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -41,30 +41,88 @@
     <h1 class="post-title">Case Studies</h1>
   </header>
 
+  <div id="table-of-contents">
+      <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#signal-double-ratchet-x3dh">Signal, Double Ratchet, X3DH</a></li>
+<li class="toc-entry toc-h1"><a href="#acme">ACME</a></li>
+<li class="toc-entry toc-h1"><a href="#needham-schroeder-lowe">Needham-Schroeder(-Lowe)</a></li>
+<li class="toc-entry toc-h1"><a href="#iso-dh">ISO-DH</a></li>
+<li class="toc-entry toc-h1"><a href="#iso-kem">ISO-KEM</a></li>
+</ul>
+  </div>
+  
   <div class="post-content">
-    <h1 id="signal">Signal</h1>
+    <p>We have carried out several in-depth case studies using our DY* framework. Below, you find an overview on these case studies and pointers to the respective publications and code repositories.</p>
 
-<p>See <a href="/bibliography/dystareurosp2021.html">our first paper on DY*</a>.</p>
+<h1 id="signal-double-ratchet-x3dh">Signal, Double Ratchet, X3DH</h1>
 
-<p><a href="https://github.com/reprosec/dolev-yao-star">Code</a></p>
+<p>The Signal protocol is used in popular messaging applications like
+WhatsApp and Skype. Signal is notable for its sophisticated use of
+Diffie-Hellman computations to obtain strong security guarantees
+against adversaries who can compromise both short-term and long-term
+secrets. Its innovative multi-round (or <em>ratcheted</em>) protocol design
+has inspired a line of work on new security definitions and proof
+techniques for properties like <em>post compromise security</em>.</p>
+
+<p>Thanks to DY*, unlike previous analyses with mechanized provers, our
+analysis does not have severly restrict the protocol to tame its
+verification complexity. Furthermore, our work is the first that
+applies a modular verification technique to analyse Signal.</p>
+
+<p>Our verification target is an interoperable implementation of Signal
+in F* developed in prior work. This implementation was verified for
+correctness against a purely functional protocol specification (also
+in F*), but the security of this protocol specification was not
+verified in F*. We close this gap by extending this specification code
+to a full DY* protocol model and proving that it achieves the secrecy
+and authentication goals of Signal, even for an unbounded number of
+rounds.</p>
+
+<p><a href="/bibliography/dystareurosp2021.html">Paper</a>
+<a href="https://github.com/reprosec/dolev-yao-star">Code</a></p>
 
 <h1 id="acme">ACME</h1>
 
-<p>See <a href="/bibliography/acmeccs2021.html">our paper on ACME</a>.</p>
+<p>The ACME certificate issuance and management protocol, standardized as
+<a href="/bibliography/rfc8555.html">RFC 8555</a> by the IETF, is an essential
+element of the web public key infrastructure (PKI). It has been used
+by <em>Let’s Encrypt</em> and other certification authorities to issue over a
+billion certificates, and a majority of HTTPS connections are now
+secured with certificates issued through ACME.</p>
 
-<p><a href="">Code</a> (not yet available)</p>
+<p>We have carried out the first in-depth formal security analysis of the
+ACME standard. Our model of ACME is executable and comprehensive, with
+a level of detail that lets our ACME client interoperate with other
+ACME servers.</p>
+
+<p><a href="/bibliography/acmeccs2021.html">Paper</a>
+<a href="">Code</a></p>
 
 <h1 id="needham-schroeder-lowe">Needham-Schroeder(-Lowe)</h1>
 
-<p><a href="https://github.com/REPROSEC/dolev-yao-star/tree/festschrift-guttman">Code</a></p>
+<p>The Needham-Schroeder public key protocol (NS-PK) is one of the most
+well-known examples for an authentication protocol in the
+literature. Since its <a href="/bibliography/Needham-Schroeder-CACM-1978.html">initial proposal in 1978</a>, the security of such cryptographic
+protocols has become a continuous field of study for the research
+community. While the first formalization for symbolic protocol
+analysis has been proposed by <a href="/bibliography/Dolev-Yao-1983.html">Dolev and Yao in 1983</a>, a severe protocol flaw in the NS-PK protocol
+remained undiscovered for 17 years: Lowe <a href="/bibliography/Lowe-IPL-1995.html">presented an attack</a> that breaks the security of the NS-PK
+protocol by mixing two concurrent protocol sessions. Lowe also <a href="/bibliography/Lowe-TACAS-1996.html">proposed a fix and showed that this fix is indeed sufficient</a> using the symbolic tool FDR.</p>
+
+<p>As NS-PK is such a widely used example, we illustrate how to analyse
+this protocol and Lowe’s fix using DY*.</p>
+
+<p><a href="/bibliography/dystareurosp2021.html">Paper</a>
+<a href="https://github.com/reprosec/dolev-yao-star">Code</a></p>
 
 <h1 id="iso-dh">ISO-DH</h1>
 
+<p><a href="/bibliography/guttmanfest2021.html">Paper</a>
+<a href="https://github.com/REPROSEC/dolev-yao-star/tree/festschrift-guttman">Code</a></p>
+
 <h1 id="iso-kem">ISO-KEM</h1>
 
-<h1 id="references">References</h1>
-
-<ul class="bibliography-list"></ul>
+<p><a href="https://github.com/reprosec/dolev-yao-star/tree/master/iso-kem">Code</a></p>
 
   </div>
 

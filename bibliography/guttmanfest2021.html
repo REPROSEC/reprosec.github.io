@@ -3,19 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code | REPROSEC</title>
+<title>A Tutorial-Style Introduction to DY* | REPROSEC</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code" />
+<meta property="og:title" content="A Tutorial-Style Introduction to DY*" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Rigorous/Reproducible Engineering for PROvable (protocol) SECurity" />
 <meta property="og:description" content="Rigorous/Reproducible Engineering for PROvable (protocol) SECurity" />
-<link rel="canonical" href="/bibliography/dystareurosp2021.html" />
-<meta property="og:url" content="/bibliography/dystareurosp2021.html" />
+<link rel="canonical" href="/bibliography/guttmanfest2021.html" />
+<meta property="og:url" content="/bibliography/guttmanfest2021.html" />
 <meta property="og:site_name" content="REPROSEC" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code" />
+<meta property="twitter:title" content="A Tutorial-Style Introduction to DY*" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Rigorous/Reproducible Engineering for PROvable (protocol) SECurity","url":"/bibliography/dystareurosp2021.html","headline":"DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code","@context":"https://schema.org"}</script>
+{"@type":"WebPage","description":"Rigorous/Reproducible Engineering for PROvable (protocol) SECurity","url":"/bibliography/guttmanfest2021.html","headline":"A Tutorial-Style Introduction to DY*","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="REPROSEC" /></head>
 <body><header class="site-header" role="banner">
@@ -38,7 +38,7 @@
         <article class="post">
 
   <header class="post-header">
-      <h1 class="post-title">DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code</h1>
+      <h1 class="post-title">A Tutorial-Style Introduction to DY*</h1>
       <p class="post-meta">
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span class="p-author h-card" itemprop="name">Karthikeyan Bhargavan</span></span>, 
@@ -54,36 +54,57 @@
               <span class="p-author h-card" itemprop="name">Guido Schmitz</span></span>, 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span class="p-author h-card" itemprop="name">Tim Würtele</span></span></p>
-      <p><i>2021 IEEE European Symposium on Security and Privacy (EuroS&P).</i> </p>
+      <p><i>Protocols, Logic, and Strands:
+Essays Dedicated to Joshua Guttman on the Occasion of His 66.66 Birthday..</i> To appear.</p>
   </header>
 
   <div class="post-content">
-      <p>We present DY*, a new formal verification framework for the symbolic security analysis of cryptographic protocol code written in the F* programming language. Unlike automated symbolic provers, our framework accounts for advanced protocol features like unbounded loops and mutable recursive data structures, as well as low-level implementation details like protocol state machines and message formats, which are often at the root of real-world attacks.</p>
+      <p>DY* is a recently proposed formal verification
+                  framework for the symbolic security analysis of
+                  cryptographic protocol code written in the F*
+                  programming language.  Unlike automated symbolic
+                  provers, D* accounts for advanced protocol features
+                  like unbounded loops and mutable recursive data
+                  structures as well as low-level implementation
+                  details like protocol state machines and message
+                  formats, which are often at the root of real-world
+                  attacks. Protocols modeled in DY* can be executed,
+                  and hence, tested, and they can even interoperate
+                  with real-world counterparts.  DY* extends a long
+                  line of research on using dependent type systems but
+                  takes a fundamentally new approach by explicitly
+                  modeling the global trace-based semantics within the
+                  framework, hence bridging the gap between
+                  trace-based and type-based protocol analyses. With
+                  this, one can uniformly, precisely, and soundly
+                  model, for the first time using dependent types,
+                  long-lived mutable protocol state, equational
+                  theories, fine-grained dynamic corruption, and
+                  trace-based security properties like forward secrecy
+                  and post-compromise security.</p>
 
-<p>Our work extends a long line of research on using dependent type systems for this task, but takes a fundamentally new approach by explicitly modeling the global trace-based semantics within the framework, hence bridging the gap between trace-based and type-based protocol analyses. This approach enables us to uniformly, precisely, and soundly model, for the first time using dependent types, long-lived mutable protocol state, equational theories, fine-grained dynamic corruption, and trace-based security properties like forward secrecy and post-compromise security.</p>
-
-<p>DY* is built as a library of F* modules that includes a model of low-level protocol execution, a Dolev-Yao symbolic attacker, and generic security abstractions and lemmas, all verified using F*. The library exposes a high-level API that facilitates succinct security proofs for protocol code. We demonstrate the effectiveness of this approach through a detailed symbolic security analysis of the Signal protocol that is based on an interoperable implementation of the protocol from prior work, and is the first mechanized proof of Signal to account for forward and post-compromise security over an unbounded number of protocol rounds.</p>
+<p>In this paper, we provide a tutorial-style introduction to DY*: We illustrate how to model and prove the security of the ISO-DH protocol, a simple key exchange protocol based on Diffie-Hellman.</p>
 
   </div>
 
-  <div><span id="dystareurosp2021">Karthikeyan Bhargavan, Abhishek Bichhawat, Quoc Huy Do, Pedram Hosseyni, Ralf Küsters, Guido Schmitz, and Tim Würtele, “DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code,” <i>2021 IEEE European Symposium on Security and Privacy (EuroS&P)</i>, pp. 523–542, 2021.</span></div>
+  <div><span id="guttmanfest2021">Karthikeyan Bhargavan, Abhishek Bichhawat, Quoc Huy Do, Pedram Hosseyni, Ralf Küsters, Guido Schmitz, and Tim Würtele, “A Tutorial-Style Introduction to DY*,” <i>Protocols, Logic, and Strands:
+Essays Dedicated to Joshua Guttman on the Occasion of His 66.66 Birthday.</i>, 2021. To appear.</span></div>
 
   
 
   
-<a href="/publications/dystareurosp2021.pdf">PDF</a>
-
   <a onclick="toggleBibtex()" href="#">BibTeX</a>
 
 <div id="bibtex" style="display: none;">
-<pre>@article{dystareurosp2021,
+<pre>@article{guttmanfest2021,
   ourwork = {yes},
   author = {Bhargavan, Karthikeyan and Bichhawat, Abhishek and Do, Quoc Huy and Hosseyni, Pedram and Küsters, Ralf and Schmitz, Guido and Würtele, Tim},
-  title = {{DY*: A Modular Symbolic Verification Framework for Executable Cryptographic Protocol Code}},
-  booktitle = {{2021 IEEE European Symposium on Security and Privacy (EuroS{\&}P)}},
+  title = {A Tutorial-Style Introduction to DY*},
+  booktitle = {Protocols, Logic, and Strands:
+  Essays Dedicated to Joshua Guttman on the Occasion of His 66.66 Birthday.},
   year = {2021},
-  publisher = {IEEE Computer Society},
-  pages = {523--542}
+  publisher = {Springer},
+  note = {To appear.}
 }
 </pre>
 </div>

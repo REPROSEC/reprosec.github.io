@@ -3,19 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>An In-Depth Symbolic Security Analysis of the ACME Standard | REPROSEC</title>
+<title>Automatic Certificate Management Environment (ACME) | REPROSEC</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="An In-Depth Symbolic Security Analysis of the ACME Standard" />
+<meta property="og:title" content="Automatic Certificate Management Environment (ACME)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Rigorous/Reproducible Engineering for PROvable (protocol) SECurity" />
 <meta property="og:description" content="Rigorous/Reproducible Engineering for PROvable (protocol) SECurity" />
-<link rel="canonical" href="/bibliography/acmeccs2021.html" />
-<meta property="og:url" content="/bibliography/acmeccs2021.html" />
+<link rel="canonical" href="/bibliography/rfc8555.html" />
+<meta property="og:url" content="/bibliography/rfc8555.html" />
 <meta property="og:site_name" content="REPROSEC" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="An In-Depth Symbolic Security Analysis of the ACME Standard" />
+<meta property="twitter:title" content="Automatic Certificate Management Environment (ACME)" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"Rigorous/Reproducible Engineering for PROvable (protocol) SECurity","url":"/bibliography/acmeccs2021.html","headline":"An In-Depth Symbolic Security Analysis of the ACME Standard","@context":"https://schema.org"}</script>
+{"@type":"WebPage","description":"Rigorous/Reproducible Engineering for PROvable (protocol) SECurity","url":"/bibliography/rfc8555.html","headline":"Automatic Certificate Management Environment (ACME)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="REPROSEC" /></head>
 <body><header class="site-header" role="banner">
@@ -38,49 +38,53 @@
         <article class="post">
 
   <header class="post-header">
-      <h1 class="post-title">An In-Depth Symbolic Security Analysis of the ACME Standard</h1>
+      <h1 class="post-title">Automatic Certificate Management Environment (ACME)</h1>
       <p class="post-meta">
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Karthikeyan Bhargavan</span></span>, 
+              <span class="p-author h-card" itemprop="name">Richard Barnes</span></span>, 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Abhishek Bichhawat</span></span>, 
+              <span class="p-author h-card" itemprop="name">Jacob Hoffman-Andrews</span></span>, 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Quoc Huy Do</span></span>, 
+              <span class="p-author h-card" itemprop="name">Daniel McCarney</span></span>, 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Pedram Hosseyni</span></span>, 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Ralf Küsters</span></span>, 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Guido Schmitz</span></span>, 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Tim Würtele</span></span></p>
-      <p><i>CCS ’21: ACM Conference on Computer and Communications Security,
-  November 14–19, 2021, Seoul, South Korea.</i> To appear.</p>
+              <span class="p-author h-card" itemprop="name">James Kasten</span></span></p>
+      <p><i>Request for Comments.</i> </p>
   </header>
 
   <div class="post-content">
-      
+      <p>Public Key Infrastructure using X.509 (PKIX) certificates are used
+   for a number of purposes, the most significant of which is the
+   authentication of domain names.  Thus, certification authorities
+   (CAs) in the Web PKI are trusted to verify that an applicant for a
+   certificate legitimately represents the domain name(s) in the
+   certificate.  As of this writing, this verification is done through a
+   collection of ad hoc mechanisms.  This document describes a protocol
+   that a CA and an applicant can use to automate the process of
+   verification and certificate issuance.  The protocol also provides
+   facilities for other certificate management functions, such as
+   certificate revocation.</p>
 
   </div>
 
-  <div><span id="acmeccs2021">Karthikeyan Bhargavan, Abhishek Bichhawat, Quoc Huy Do, Pedram Hosseyni, Ralf Küsters, Guido Schmitz, and Tim Würtele, “An In-Depth Symbolic Security Analysis of the ACME Standard,” <i>CCS ’21: ACM Conference on Computer and Communications Security,
-  November 14–19, 2021, Seoul, South Korea</i>, 2021. To appear.</span></div>
+  <div><span id="rfc8555">Richard Barnes, Jacob Hoffman-Andrews, Daniel McCarney, and James Kasten, “Automatic Certificate Management Environment (ACME),” in <i>Request for Comments</i>, no. 8555, IETF, 2019.</span></div>
 
+  
+  <a href="https://datatracker.ietf.org/doc/html/rfc8555">Link</a>
   
 
   
   <a onclick="toggleBibtex()" href="#">BibTeX</a>
 
 <div id="bibtex" style="display: none;">
-<pre>@article{acmeccs2021,
-  ourwork = {yes},
-  author = {Bhargavan, Karthikeyan and Bichhawat, Abhishek and Do, Quoc Huy and Hosseyni, Pedram and Küsters, Ralf and Schmitz, Guido and Würtele, Tim},
-  title = {An In-Depth Symbolic Security Analysis of the ACME Standard},
-  booktitle = {CCS '21: ACM Conference on Computer and Communications Security,
-    November 14--19, 2021, Seoul, South Korea},
-  year = {2021},
-  publisher = {ACM},
-  note = {To appear.}
+<pre>@incollection{rfc8555,
+  booktitle = {Request for Comments},
+  number = {8555},
+  publisher = {IETF},
+  url = {https://datatracker.ietf.org/doc/html/rfc8555},
+  author = {Barnes, Richard and Hoffman-Andrews, Jacob and McCarney, Daniel and Kasten, James},
+  title = {{Automatic Certificate Management Environment (ACME)}},
+  year = {2019},
+  month = mar
 }
 </pre>
 </div>
