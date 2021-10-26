@@ -11,7 +11,10 @@ permalink: /
 
 REPROSEC stands for "Rigorous/Reproducible Engineering for PROvable (protocol) SECurity".
 
-*Note that this page is under construction.*
+REPROSEC is an umbrella project for works on rigorous, formal methods to prove (cryptographic) protocols secure in a mechanized, reproducible way.
+
+Current work includes:
+ * [DY*]({% link dystar.md %}): a formal verification framework for the symbolic security analysis of cryptographic protocol code written in the F\* programming language
 
 ## Team
 
