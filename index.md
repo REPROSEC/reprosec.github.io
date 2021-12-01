@@ -23,5 +23,5 @@ Current work includes:
  * Quoc Huy Do (GLIWA GmbH; previously SEC, University of Stuttgart)
  * [Pedram Hosseyni (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Ralf Küsters (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
- * [Guido Schmitz (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
+ * [Guido Schmitz (ISG, Royal Holloway, University of London)](https://isg.rhul.ac.uk)
  * [Tim Würtele (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
