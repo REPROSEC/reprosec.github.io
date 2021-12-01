@@ -31,7 +31,7 @@ to a full DY\* protocol model and proving that it achieves the secrecy
 and authentication goals of Signal, even for an unbounded number of
 rounds.
 
-{% cite_details dystareurosp2021 --text Paper %}
+{% cite_details dystareurosp2021 --text Paper %} |
 [Code](https://github.com/reprosec/dolev-yao-star)
 
 # ACME
@@ -48,8 +48,8 @@ ACME standard. Our model of ACME is executable and comprehensive, with
 a level of detail that lets our ACME client interoperate with other
 ACME servers.
 
-{% cite_details acmeccs2021 --text Paper %}
-[Code]()
+{% cite_details acmeccs2021 --text Paper %} |
+[Code](https://github.com/REPROSEC/acme-case-study)
 
 # Needham-Schroeder(-Lowe)
 
@@ -70,12 +70,12 @@ fix is indeed sufficient %} using the symbolic tool FDR.
 As NS-PK is such a widely used example, we illustrate how to analyse
 this protocol and Lowe's fix using DY\*.
 
-{% cite_details dystareurosp2021 --text Paper %}
+{% cite_details dystareurosp2021 --text Paper %} |
 [Code](https://github.com/reprosec/dolev-yao-star)
 
 # ISO-DH
 
-{% cite_details guttmanfest2021 --text Paper %}
+{% cite_details guttmanfest2021 --text Paper %} |
 [Code](https://github.com/REPROSEC/dolev-yao-star/tree/festschrift-guttman)
 
 # ISO-KEM
