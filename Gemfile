@@ -17,7 +17,7 @@ gem "kramdown-parser-gfm"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-scholar", "~> 5.9"
+  gem "jekyll-scholar", "~> 6.0"
   gem "jekyll-toc"
 end
 
