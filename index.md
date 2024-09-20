@@ -21,7 +21,7 @@ Current work includes:
  * [Karthikeyan Bhargavan (Prosecco, INRIA Paris)](https://prosecco.gforge.inria.fr/personal/karthik/)
  * [Abhishek Bichhawat (IIT Gandhinagar)](https://iitgn.ac.in/faculty/cse/abhishek)
  * Quoc Huy Do (GLIWA GmbH; previously SEC, University of Stuttgart)
- * [Guido Schmitz (ISG, Royal Holloway, University of London)](https://isg.rhul.ac.uk)
+ * [Guido Schmitz (Lancaster University Leipzig)](https://lancasterleipzig.de)
  * [Clara Waldmann (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Klaas Pruiksma (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Pedram Hosseyni (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)

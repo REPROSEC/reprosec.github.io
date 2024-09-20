@@ -131,3 +131,18 @@ Our work extends a long line of research on using dependent type systems for thi
 
 DY* is built as a library of F* modules that includes a model of low-level protocol execution, a Dolev-Yao symbolic attacker, and generic security abstractions and lemmas, all verified using F*. The library exposes a high-level API that facilitates succinct security proofs for protocol code. We demonstrate the effectiveness of this approach through a detailed symbolic security analysis of the Signal protocol that is based on an interoperable implementation of the protocol from prior work, and is the first mechanized proof of Signal to account for forward and post-compromise security over an unbounded number of protocol rounds.},
 }
+
+@article{Bhargavanetal-ESORICS-2023,
+  ourwork  = {yes},
+  abstract = {While cryptographic protocols are often analyzed in isolation, they are typically deployed within a stack of protocols, where each layer relies on the security guarantees provided by the protocol layer below it, and in turn provides its own security functionality to the layer above.  Formally analyzing the whole stack in one go is infeasible even for semi-automated verification tools, and impossible for pen-and-paper proofs. The DY* protocol verification framework offers a modular and scalable technique that can reason about large protocols, specified as a set of F* modules. However, it does not support the compositional verification of layered protocols since it treats the global security invariants monolithically.  In this paper, we extend DY* with a new methodology that allows analysts to modularly analyze each layer in a way that compose to provide security for a protocol stack. Importantly, our technique allows a layer to be replaced by another implementation, without affecting the proofs of other layers. We demonstrate this methodology on two case studies. We also present a verified library of generic authenticated and confidential communication patterns that can be used in future protocol analyses and is of independent interest.},
+  author = {Bhargavan, Karthikeyan and Bichhawat, Abhishek and Hosseyni, Pedram and K{\"u}sters, Ralf and Pruiksma, Klaas and Schmitz, Guido and Waldmann, Clara and W{\"u}rtele, Tim},
+  booktitle = {{28th European Symposium on Research in Computer Security (ESORICS 2023)}},
+  doi = {10.1007/978-3-031-51479-1_1},
+  pages = {3--21},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  title = {{Layered Symbolic Security Analysis in DY*}},
+  url = {https://publ.sec.uni-stuttgart.de/bhargavanetal-iacr-2023-1329.pdf},
+  volume = 14346,
+  year = 2023
+}
