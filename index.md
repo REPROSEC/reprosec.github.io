@@ -18,7 +18,7 @@ Current work includes:
 
 ## Team
 
- * [Karthikeyan Bhargavan (Prosecco, INRIA Paris)](https://prosecco.gforge.inria.fr/personal/karthik/)
+ * [Karthikeyan Bhargavan (Cryspen, Inria Paris)](https://bhargavan.info/)
  * [Abhishek Bichhawat (IIT Gandhinagar)](https://iitgn.ac.in/faculty/cse/abhishek)
  * Quoc Huy Do (GLIWA GmbH; previously SEC, University of Stuttgart)
  * [Guido Schmitz (Lancaster University Leipzig)](https://lancasterleipzig.de)
@@ -27,3 +27,4 @@ Current work includes:
  * [Pedram Hosseyni (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Ralf Küsters (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
  * [Tim Würtele (SEC, University of Stuttgart)](https://sec.uni-stuttgart.de)
+ * [Théophile Wallez (CISPA, previously Inria Paris)](https://www.twal.org/)
