@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>Automatic Certificate Management Environment (ACME) | REPROSEC</title>
+<title>DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios | REPROSEC</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Automatic Certificate Management Environment (ACME)" />
+<meta property="og:title" content="DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Rigorous/Reproducible Engineering for PROvable (protocol) SECurity" />
 <meta name="twitter:description" property="og:description" content="Rigorous/Reproducible Engineering for PROvable (protocol) SECurity" />
-<link rel="canonical" href="/bibliography/rfc8555.html" />
-<meta property="og:url" content="/bibliography/rfc8555.html" />
+<link rel="canonical" href="/bibliography/Wallez-sp2026.html" />
+<meta property="og:url" content="/bibliography/Wallez-sp2026.html" />
 <meta property="og:site_name" content="REPROSEC" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Automatic Certificate Management Environment (ACME)" />
+<meta name="twitter:title" content="DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Rigorous/Reproducible Engineering for PROvable (protocol) SECurity","headline":"Automatic Certificate Management Environment (ACME)","url":"/bibliography/rfc8555.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Rigorous/Reproducible Engineering for PROvable (protocol) SECurity","headline":"DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios","url":"/bibliography/Wallez-sp2026.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="REPROSEC" /></head>
 <body><header class="site-header" role="banner">
@@ -39,53 +39,43 @@
         <article class="post">
 
   <header class="post-header">
-      <h1 class="post-title">Automatic Certificate Management Environment (ACME)</h1>
+      <h1 class="post-title">DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios</h1>
       <p class="post-meta">
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Richard Barnes</span></span>, 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Jacob Hoffman-Andrews</span></span>, 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">Daniel McCarney</span></span>, 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">James Kasten</span></span></p>
-      <p><i>Request for Comments.</i> </p>
+              <span class="p-author h-card" itemprop="name">Théophile Wallez</span></span></p>
+      <p><i> 2026 IEEE Symposium on Security and Privacy (SP) .</i> </p>
   </header>
 
   <div class="post-content">
-      <p>Public Key Infrastructure using X.509 (PKIX) certificates are used
-   for a number of purposes, the most significant of which is the
-   authentication of domain names.  Thus, certification authorities
-   (CAs) in the Web PKI are trusted to verify that an applicant for a
-   certificate legitimately represents the domain name(s) in the
-   certificate.  As of this writing, this verification is done through a
-   collection of ad hoc mechanisms.  This document describes a protocol
-   that a CA and an applicant can use to automate the process of
-   verification and certificate issuance.  The protocol also provides
-   facilities for other certificate management functions, such as
-   certificate revocation.</p>
+      <p>Cryptographic protocols are the cornerstone of Internet security, and any flaw in their design would have drastic effects. We can formally prove the absence of such flaws using a variety of automated or semi-automated tools. However, some features of real-world protocols are notoriously hard to analyze using these tools, including unbounded loops, unbounded data structures, and unbounded and dynamic number of protocol participants. The DY* protocol verification framework recently emerged as a tool designed to address these challenges, and it was successfully used to analyze protocols such as Signal, ACME and TreeSync. However, we note that DY* suffers from two deep limitations: first, security proofs of protocol subcomponents cannot be composed, which hinders the analysis of large protocols; second, the security proofs depend on a simple language to describe compromises, which overly restricts the set of compromise scenarios DY* can reason about. In this paper, we present a major overhaul of DY* that addresses these limitations. We enable composing security proofs in DY* by developing a framework to define trace invariants modularly, and we improve the precision of compromise scenarios that DY* can prove by fully generalizing the notion of security labels. These improvements are essential to enable the analysis of large protocols. In particular, our new version of DY* was already used by and crucial to the security proofs of the TreeKEM protocol (IEEE S&amp;P 2025).</p>
 
   </div>
 
-  <div><span id="rfc8555">Richard Barnes, Jacob Hoffman-Andrews, Daniel McCarney, and James Kasten, “Automatic Certificate Management Environment (ACME),” in <i>Request for Comments</i>, no. 8555, IETF, 2019.</span></div>
+  <div><span id="Wallez-sp2026">Théophile Wallez, “DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios,” in <i> 2026 IEEE Symposium on Security and Privacy (SP) </i>, Los Alamitos, CA, USA, 2026, pp. 1–18.</span></div>
 
   
-  <a href="https://datatracker.ietf.org/doc/html/rfc8555">Link</a>
+  <a href="https://doi.ieeecomputersociety.org/10.1109/SP63933.2026.00220">Link</a>
   
 
   
   <a onclick="toggleBibtex()" href="#">BibTeX</a>
 
 <div id="bibtex" style="display: none;">
-<pre>@incollection{rfc8555,
-  booktitle = {Request for Comments},
-  number = {8555},
-  publisher = {IETF},
-  url = {https://datatracker.ietf.org/doc/html/rfc8555},
-  author = {Barnes, Richard and Hoffman-Andrews, Jacob and McCarney, Daniel and Kasten, James},
-  title = {{Automatic Certificate Management Environment (ACME)}},
-  year = {2019},
-  month = mar
+<pre>@inproceedings{Wallez-sp2026,
+  ourwork = {yes},
+  author = {Wallez, Théophile},
+  booktitle = { 2026 IEEE Symposium on Security and Privacy (SP) },
+  title = {{DY* Unchained: Now with Composable Security Proofs and Precise Compromise Scenarios}},
+  year = {2026},
+  volume = {},
+  issn = {},
+  pages = {1-18},
+  keywords = {Labeling;Protocols;Security;Modeling;Printing;Cryptographic protocols;Fluid flow;Conferences;Tools;Computers},
+  doi = {10.1109/SP63933.2026.00220},
+  url = {https://doi.ieeecomputersociety.org/10.1109/SP63933.2026.00220},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = may
 }
 </pre>
 </div>
